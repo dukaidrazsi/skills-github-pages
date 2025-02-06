@@ -1,0 +1,801 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Év fajai</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Fejléc kép -->
+  <header>
+    <img src="vonulas.jpg" alt="Fejléc kép" class="img-fluid w-100">
+  </header>
+  
+  <!-- Navigációs sáv -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Év fajai:</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#ev-madara">Az év madara</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ev-emlose">Az év emlőse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ev-hulluje-keteltuje">Az év hüllője, kétéltűje</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+  <!-- Év madara program szakasz -->
+  <div id="ev-madara" class="container my-5">
+    <h2>Az év madara</h2>
+    <p>A Magyar Madártani és Természetvédelmi Egyesület (MME) 1979-ben indította el az „Év madara” programját. Ennek célja, hogy a társadalommal megismertesse azokat a madárfajokat vagy fajcsoportokat, amelyek védelmében a lakosság vagy annak egyes csoportjai (például gazdálkodók, vadászok, pedagógusok) különösen fontos szerepet kaphatnak. Emellett felhívja a figyelmet azokra az érdekütközésekre, konfliktusokra, amelyeket fel kell oldani. Az év madarának csak olyan fajt választanak, amelynek folyamatos védelmében az egyesület tevőlegesen is részt vesz.</p>
+
+    <p>2011-ben kísérletképpen internetes szavazással választatták meg, hogy a három ajánlott faj közül melyik legyen 2012-ben az év madara. Az akciót sikeresnek ítélték, ezért a következő években is így választották meg. Kivételt a 2018-as és a 2024-es évek jelentették mert, 2018-ban a pogram 20 éves visszatérésének évfordulója alkalmából a vándorsólyom, 2024-ben pedig az MME 50 éves évfordulója alkalmából a kerecsensólyom kapta ezt a megtisztelő címet.</p>
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#evMadaraDropdown">
+      Melyik év madarára vagy kíváncsi?
+    </button>
+    <div id="evMadaraDropdown" class="collapse mt-3">
+      <ul class="list-group">
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2025" style="color: green;">2025. Böjti réce</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2024" style="color: green;">2024. Kerecsensólyom</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2023" style="color: green;">2023. Barkóscinege</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2022" style="color: green;">2022. Zöld küllő</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2021" style="color: green;">2021. Cigánycsuk</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2020" style="color: green;">2020. Erdei fülesbagoly</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2019" style="color: green;">2019. Gólyatöcs</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2018" style="color: green;">2018. Vándorsólyom</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2017" style="color: green;">2017. Tengelic</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2016" style="color: green;">2016. Haris</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2015" style="color: green;">2015. Búbos banka</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2014" style="color: green;">2014. Túzok</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2013" style="color: green;">2013. Gyurgyalag</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2012" style="color: green;">2012. Egerészölyv</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2011" style="color: green;">2011. Széncinege</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2010" style="color: green;">2010. Fecskék</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2009" style="color: green;">2009. Kék vércse és vetési varjú</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2008" style="color: green;">2008. Kanalasgém</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2007" style="color: green;">2007. Mezei veréb</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2006" style="color: green;">2006. Tövisszúró gébics</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2005" style="color: green;">2005. Parlagi sas</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2004" style="color: green;">2004. Rozsdafarkú</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2003" style="color: green;">2003. Pacsirták</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2002" style="color: green;">2002. Sárgarigó</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2001" style="color: green;">2001. Bíbic</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar2000" style="color: green;">2000. Kerecsensólyom</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1999" style="color: green;">1999. Fehér gólya</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1998" style="color: green;">1998. Harkályok</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1997" style="color: green;">1997. Harkályok</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1996" style="color: green;">1996. Vörösbegy</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1995" style="color: green;">1995. Fülemüle</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1994" style="color: green;">1994. Fehér gólya</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1993" style="color: green;">1993. Barátposzáta</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1992" style="color: green;">1992. Vörös vércse</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1991" style="color: green;">1991. Európai szalakóta</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1990" style="color: green;">1990. Búbos banka</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1989" style="color: green;">1989. Búbos banka</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1988" style="color: green;">1988. Kuvik</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1987" style="color: green;">1987. Fogoly</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1986" style="color: green;">1986. Túzok</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1985" style="color: green;">1985. Gyöngybagoly</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1984" style="color: green;">1984. Cinegék</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1983" style="color: green;">1983. Fecskék</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1982" style="color: green;">1982. Fecskék</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1981" style="color: green;">1981. Fehér gólya</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1980" style="color: green;">1980. Fehér gólya</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#madar1979" style="color: green;">1979. Gyurgyalag</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Év emlőse program szakasz -->
+  <div id="ev-emlose" class="container my-5">
+    <h2>Az év emlőse</h2>
+    <p>A VADONLESŐ Program, a támogató szakmai szervezetekkel egyeztetve, 2014-ben indította el az Év Emlőse programot, amely ráirányítja a figyelmet egy-egy aktuálisan kijelölt hazai emlősfajra, elősegítve azok megismerését és hatékonyabb védelmét.</p>
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#evEmloseDropdown">
+     Melyik év emlősére vagy kíváncsi?
+    </button>
+    <div id="evEmloseDropdown" class="collapse mt-3">
+      <ul class="list-group">
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2025" style="color: green;">2025. Magyar szöcskeegér</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2024" style="color: green;">2024. Vadmacska</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2023" style="color: green;">2023. Vakond</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2022" style="color: green;">2022. Törpeegér</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2021" style="color: green;">2021. Hermelin</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2020" style="color: green;">2020. Vidra</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2019" style="color: green;">2019. Hiúz</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2018" style="color: green;">2018. Földikutya</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2017" style="color: green;">2017. Mogyorós Pele</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2016" style="color: green;">2016. Denevér</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2015" style="color: green;">2015. Ürge</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#emlose2014" style="color: green;">2014. Sün</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="ev-hulluje-keteltuje" class="container my-5">
+    <h2>Az év hüllője, kétéltűje</h2>
+    <p>A Magyar Madártani és Természetvédelmi Egyesület (MME) Kétéltű- és Hüllővédelmi Szakosztálya 2012-ben indította el a hazai herpetofauna (hüllők és kétéltűek csoportja egy adott régióban vagy időszakban) megismertetését célzó az Év kétéltűje, az Év hüllője programot. Azóta évente váltakozva egy-egy hüllő- vagy kétéltűfajunkra irányítják a figyelmet azzal, hogy Év fajaként nevezik meg.</p>
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#evhullujeketeltujeDropdown">
+      Melyik év hüllőjére, kétéltűjére vagy kíváncsi?
+    </button>
+    <div id="evhullujeketeltujeDropdown" class="collapse mt-3">
+      <ul class="list-group">
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2025" style="color: green;">2025. Sárgahasú unka</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2024" style="color: green;">2024. Kaszpi haragossikló</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2023" style="color: green;">2023. Alpesi gőte</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2022" style="color: green;">2022. Homoki gyík</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2021" style="color: green;">2021. Zöld varangy</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2020" style="color: green;">2020. Keresztes vipera</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2019" style="color: green;">2019. Foltos szalamandra</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2018" style="color: green;">2018. Elevenszölő gyík</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2017" style="color: green;">2017. Mocsári béka</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2016" style="color: green;">2016. Kockás sikló</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2015" style="color: green;">2015. Dunai tarajosgőte</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2014" style="color: green;">2014. Mocsári teknős</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2013" style="color: green;">2013. Barna ásóbéka</a></li>
+        <li class="list-group-item" style="list-style-type: disc; color: green;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#hullo2012" style="color: green;">2012. Lábatlangyík</a></li>
+      </ul>
+    </div>
+  </div>
+  
+<!-- 2025 év madara - Böjti réce -->
+<div class="offcanvas offcanvas-end" id="madar2025">
+  <div class="offcanvas-header">
+    <h5>2025. év madara</h5>
+    <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+  </div>
+  <div class="offcanvas-body">
+    <h3>Böjti réce</h3>
+    <img src="bojtirece.jpg" width="300px" height="170px" class="rounded shadow">
+    <p>Apró termetű réce, viszonylag gyakori fészkelő. Európában és azon belül Magyarországon is kis mértékben csökken állománya. Mivel hazai populációjának jelentős része nem a nagy kiterjedésű állóvizeken költ, hanem időszakos elöntéseken, kubikgödrökben, kisebb mocsarakban, nedves réteken, ezek állapotának leromlása, hasznosításuk megváltozása, vagy aszály okozta kiszáradása lokálisan veszélyeztetheti fészkelését, összességében pedig egész állományának csökkenését okozza. Mivel harmadik leggyakoribb fészkelő récefajunk, sokáig vadászható volt, de állományának csökkenése indokolttá tette természetvédelmi oltalmát. Hazánkon jelentős számban vonul át, viszonylag korán elhagyja Európát. A telet jórészt Afrika trópusi területein tölti.</p>
+    <img src="bojtirece1.png" width="300px" height="200px" class="rounded shadow">
+    <b>Élőhelye, költése:</b>
+    <p>Eurázsia mérsékelt övi területein költ. Szikes tavakon, csapadékos években elöntéseken, nagyobb belvízfoltokon, időszakosan kiszáradó mocsarakban, kubikgödrökben is megtelepedhet. Fészkét sűrű növényzetben alakítja ki, a tojó ide rakja 6-13 tojását. A kotlás 23 napig tart, a fiókák öthetes korukban válnak röpképessé. Előszeretettel táplálkozik sekély tocsogókon, főleg magokat, zöld növényi részeket és gerincteleneket fogyaszt.</p>
+    <img src="bojtirece2.jpg" width="300px" height="210px" class="rounded shadow">
+    <br>
+    <b>Hazai előfordulás:</b>
+    <p>Magyarországon kisszámú fészkelő. Hazai állománya hosszú távú vonuló, telelőterülete Afrika (Ny–Száhel). Rendszeresen, nagy számban átvonul. Fészkelőállománya 500 – 700 pár (2013–2018, szakértői becslés alapján). Fészkelőállományának trendje bizonytalan (1999–2021).</p>
+    <br>
+    <button class="btn btn-primary btn-lg shadow" data-bs-toggle="modal" data-bs-target="#tesztModal">Teszteld a tudásod</button>
+  </div>
+</div>
+
+<!-- Teszt modális ablak -->
+<div class="modal fade" id="tesztModal" tabindex="-1" aria-labelledby="tesztModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="tesztModalLabel">Böjti réce kvíz</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Bezárás"></button>
+      </div>
+      <div class="modal-body">
+        <form id="quizForm">
+          <div id="result" class="text-center fw-bold mb-3"></div>
+          <div id="questions">
+            <div class="question" id="question0">
+              1. Mely kontinenseken fordul elő a böjti réce?<br>
+              <input type="radio" name="q0" value="0"> a) Európa, Ázsia, Afrika <br>
+              <input type="radio" name="q0" value="1"> b) Amerika, Európa, Ázsia <br>
+              <input type="radio" name="q0" value="2"> c) Ausztrália, Antarktisz<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: a) Európa, Ázsia, Afrika </div>
+            </div>
+            <div class="question" id="question1">
+              2. Mekkora a böjti réce testhossza?<br>
+              <input type="radio" name="q1" value="0"> a) 30-35 cm <br>
+              <input type="radio" name="q1" value="1"> b) 37-41 cm <br>
+              <input type="radio" name="q1" value="2"> c) 45-50 cm<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: b) 37-41 cm</div>
+            </div>
+            <div class="question" id="question2">
+              3. Mi jellemző a hím böjti réce fejére?<br>
+              <input type="radio" name="q2" value="0"> a) zöld színű fej és nyak <br>
+              <input type="radio" name="q2" value="1"> b) fehér szemöldöksáv és sötét fejtető <br>
+              <input type="radio" name="q2" value="2"> c) sárgás színű fej <br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz:  b) fehér szemöldöksáv és sötét fejtető</div>
+            </div>
+            <div class="question" id="question3">
+              4. Mi jellemző a böjti réce röpképességére?<br>
+              <input type="radio" name="q3" value="0"> a) 5 hetes korukra alakul ki <br>
+              <input type="radio" name="q3" value="1"> b) 2 hetes korukra alakul ki <br>
+              <input type="radio" name="q3" value="2"> c) 8 hetes korukra alakul ki <br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: a) 5 hetes korukra alakul ki </div>
+            </div>
+            <div class="question" id="question4">
+              5. Milyen típusú élőhelyeken költ a böjti réce?<br>
+              <input type="radio" name="q4" value="0"> a) hegyi tavak mentén <br>
+              <input type="radio" name="q4" value="1"> b) síksági vizes élőhelyeken, mocsarakban <br>
+              <input type="radio" name="q4" value="2"> c) városi parkokban<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: b) síksági vizes élőhelyeken, mocsarakban</div>
+            </div>
+            <div class="question" id="question5">
+              6. Mit eszik főként a böjti réce?<br>
+              <input type="radio" name="q5" value="0"> a) halakat és más madarakat <br>
+              <input type="radio" name="q5" value="1"> b) növényi részeket, rovarokat és férgeket<br>
+              <input type="radio" name="q5" value="2"> c) kisebb emlősöket, rágcsálókat<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: b) növényi részeket, rovarokat és férgeket</div>
+            </div>
+            <div class="question" id="question6">
+              7. Melyik évben lett védett faj a böjti réce Magyarországon?<br>
+              <input type="radio" name="q6" value="0"> a) 1990 <br>
+              <input type="radio" name="q6" value="1"> b) 2008 <br>
+              <input type="radio" name="q6" value="2"> c) 2015<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: b) 2008 </div>
+            </div>
+            <div class="question" id="question7">
+              8. Mennyi a böjti réce természetvédelmi értéke?<br>
+              <input type="radio" name="q7" value="0"> a) 50 000 Ft <br>
+              <input type="radio" name="q7" value="1"> b) 100 000 Ft <br>
+              <input type="radio" name="q7" value="2"> c) 200 000 Ft<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: b) 100 000 Ft </div>
+            </div>
+            <div class="question" id="question8">
+              9. Hány tojásból áll egy böjti réce fészekalj?<br>
+              <input type="radio" name="q8" value="0"> a) 3-5 tojás <br>
+              <input type="radio" name="q8" value="1"> b) 6-13 tojás <br>
+              <input type="radio" name="q8" value="2"> c) 15-20 tojás<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: b) 6-13 tojás </div>
+            </div>
+            <div class="question" id="question9">
+              10. Mikor kezdi meg a költést a böjti réce?<br>
+              <input type="radio" name="q9" value="0"> a) március végén  <br>
+              <input type="radio" name="q9" value="1"> b) április közepén<br>
+              <input type="radio" name="q9" value="2"> c) május elején<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: b) április közepén</div>
+            </div>
+            <div class="question" id="question10">
+              11. Hol építi fészkét a böjti réce?<br>
+              <input type="radio" name="q10" value="0"> a) fák tetején <br>
+              <input type="radio" name="q10" value="1"> b) víz közelében, fű között rejtve <br>
+              <input type="radio" name="q10" value="2"> c) sziklafalakon<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: b) víz közelében, fű között rejtve </div>
+            </div>
+            <div class="question" id="question11">
+              12. Mely területeken telel a böjti réce?<br>
+              <input type="radio" name="q11" value="0"> a) Ausztrália és Új-Zéland <br>
+              <input type="radio" name="q11" value="1"> b) Észak-Európa és Szibéria <br>
+              <input type="radio" name="q11" value="2"> c) Száhel övezet, Délkelet-Ázsia<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: c) Száhel övezet, Délkelet-Ázsia</div>
+            </div>
+            <div class="question" id="question12">
+              13. Legkorábban mikor térnek vissza Magyarországra az első példányok?<br>
+              <input type="radio" name="q12" value="0"> a) február végén <br>
+              <input type="radio" name="q12" value="1"> b) március közepén <br>
+              <input type="radio" name="q12" value="2"> c) április elején <br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: a) február végén </div>
+            </div>
+            <div class="question" id="question13">
+              13+1. Mi veszélyezteti a böjti récét?<br>
+              <input type="radio" name="q13" value="0"> a) fészkelőhelyek eltűnése <br>
+              <input type="radio" name="q13" value="1"> b) vadászat <br>
+              <input type="radio" name="q13" value="2"> c) mindkettő<br>
+              <div class="correct-answer text-success fw-bold d-none">Helyes válasz: c) mindkettő</div>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="btn btn-success btn-lg shadow" onclick="checkAnswers()">Ellenőrzés</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Alap háttér és színpaletta */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #f30606, #2575fc);
+    color: #fff;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Modal ablak stílus */
+  .modal-dialog {
+    max-width: 900px;
+  }
+
+  .modal-header {
+    background: linear-gradient(90deg, #00b4d8, #008c7e);
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .modal-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  /* Kérdések és válaszok */
+  .question {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+  }
+
+  .question:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .question input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  /* A kérdések szövegét feketévé tesszük */
+  .question, .question input[type="radio"] {
+    color: #000;
+  }
+
+  .correct-answer {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  /* A gomb színei */
+  .btn-gradient {
+    background: linear-gradient(45deg, #ff6347, #ff1493);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-gradient:hover {
+    background: linear-gradient(45deg, #ff1493, #ff6347);
+    transform: scale(1.05);
+  }
+
+  /* Eredmény kijelzés */
+  #result {
+    font-size: 1.5rem;
+    margin: 20px;
+    color: #fff;
+  }
+
+  /* Helyes válaszok színei */
+  .correct {
+    color: #28a745 !important;
+  }
+
+  .incorrect {
+    color: #dc3545 !important;
+  }
+
+  .correct-answer {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .incorrect-answer {
+    text-decoration: underline;
+    color: #dc3545;
+  }
+</style>
+
+<script>
+  // Helyes válaszok objektum, ahol a kérdésekhez tartozó helyes válasz indexeit adhatjuk meg
+  const correctAnswers = {
+    0: 0, // 1. kérdés helyes válasza
+    1: 1, // 2. kérdés helyes válasza
+    2: 1, // 3. kérdés helyes válasza
+    3: 0, // 4. kérdés helyes válasza
+    4: 1, // 5. kérdés helyes válasza
+    5: 1, // 6. kérdés helyes válasza
+    6: 1, // 7. kérdés helyes válasza
+    7: 1, // 8. kérdés helyes válasza
+    8: 1, // 9. kérdés helyes válasza
+    9: 1, // 10. kérdés helyes válasza
+    10: 1, // 11. kérdés helyes válasza
+    11: 2, // 12. kérdés helyes válasza
+    12: 0, // 13. kérdés helyes válasza
+    13: 2, // 14. kérdés helyes válasza
+  };
+
+  function checkAnswers() {
+    let score = 0;
+    let totalQuestions = 14;  // Az összes kérdés száma
+    for (let i = 0; i < totalQuestions; i++) {
+      const selected = document.querySelector(`input[name='q${i}']:checked`);
+      const questionDiv = document.getElementById(`question${i}`);
+      const correctAnswerDiv = questionDiv.querySelector(".correct-answer");
+      questionDiv.classList.remove("correct", "incorrect");
+      correctAnswerDiv.classList.add("d-none");
+
+      if (selected) {
+        const answerIndex = parseInt(selected.value);
+        const correctIndex = correctAnswers[i];
+        if (answerIndex === correctIndex) {
+          questionDiv.classList.add("correct");
+          score++;
+        } else {
+          questionDiv.classList.add("incorrect");
+          correctAnswerDiv.classList.remove("d-none");
+        }
+      } else {
+        questionDiv.classList.add("incorrect");
+        correctAnswerDiv.classList.remove("d-none");
+      }
+    }
+    document.getElementById("result").innerHTML = `Eredmény: ${score} / ${totalQuestions}`;
+  }
+</script>
+
+
+
+<!--24-->
+  <div class="offcanvas offcanvas-end" id="madar2024">
+    <div class="offcanvas-header">
+      <h5>2024. év madara</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Kerecsensólyom</h3>
+      <img src="kerecsen.jpg"; width="300px"; height="170px">
+      <p>A magyarok eredetmondáiban szereplő turul feltételezhetően a kerecsensólyom volt, vagy róla mintázták. Az 50 forintos érmén is ez a madár látható. A hazai természetvédelem kiemelten fontos feladata a faj védelme, ugyanis ez a termetes sólyomfaj a Kárpát-medencében éri el elterjedési területének nyugati határát. Az Európai Unión belül nálunk él a legnagyobb számban. Szinte mindenhol csökken az állománya, de a hazai populáció a fajvédelmi intézkedéseknek köszönhetően növekszik. Korábban a legnagyobb veszélyt a fészkek kifosztása jelentette, mivel a kerecsenből kiváló solymászmadarat lehetett nevelni. Ezt a veszélyeztetett fészkek őrzésével, nagyrészt önkéntesek segítségével sikerült visszaszorítani. Jelenleg az áramütés veszélyezteti leginkább, ezért a vezetékek szigetelése a természetvédelem egyik legfontosabb feladata. Magasfeszültségű vezetékek oszlopira kihelyezett mesterséges költőládákkal elősegíthető megtelepedése. Részben ennek köszönhető, hogy a hegylábi területekről áttevődött az állomány súlypontja az eredeti élőhelyeket jelentő nyílt, sík vidéki agrárterületekre.Emellett természetes facsoportokban, fasorokban lévő fészkeinek védelme is fontos, itt fokozottan ügyelni kell arra, hogy költés közben feleslegesen ne zavarják a mezőgazdasági területeken dolgozó emberek. Mivel egyik fő tápláléka az ürge, ahol megfelelő élőhelyeken hiányzik ez a védett rágcsáló, érdemes telepítési programot indítani. Az állomány egy része elvonul, a telet Kis-Ázsiában és Észak-Afrikában tölti. Magyarországon február és november közt figyelhető meg, de az öreg párok egész évben itthon maradhatnak.
+        
+        <img src="kerecsen1.png"; width="300px"; height="170px">
+        <b>Élőhelye, költése:</b>
+        
+        Az eurázsiai erdős sztyepp zóna jellegzetes sólyomfaja, a Kárpát-medencétől Kínáig terjedt el. Magyarországon régebben főleg sziklapárkányokon költött, mára nagyrészt nyílt agrárterületeken költ. Fészket nem épít varjúfélék, más ragadozómadarak fészkét foglalja el, de mesterséges költőládákban is egyre nagyobb számban fészkel. Ezekben a speciálisan a madarak igényei szerint kialakított költőalkalmatosságokban nagyobb sikerrel költenek, mint a természetes fészkekben. A fészekalj 2-5 tojásból áll, a fiókák 32-33 nap alatt kelnek ki. A fiókákat kezdetben a tojó őrzi, a hím vadászik és eteti a családot. Mikor a fiókák ellátásáról a hím már egyedül nem tud gondoskodni, a tojó is magára hagyja a fészket. A fiókák 42-45 napos korban repülnek ki. Fő tápláléka az ürge, elterjedése is nagyjából egybe esik a gyepes területeken élő rágcsálóéval. Jelentős mennyiségben zsákmányol galambokat és gerléket is. Emellett más kisemlősöket és madarakat is elfog.</p>
+      <img src="kerecsen2.jpg"; width="300px"; height="170px">
+      <p><b>Hazai előfordulás:</b>
+        Magyarországon kisszámú fészkelő. Hazai állománya állandó, részben rövid távú vonuló, telelőterülete a kelet-Mediterráneum és Kis–Ázsia. Fészkelőállománya 145 – 175 pár (2015–2018, teljes felmérés, alapadatok alapján). Fészkelőállománya stabil.
+      </p>
+    </div>
+  </div>
+<!--24vége-->
+<!--23-->
+  <div class="offcanvas offcanvas-end" id="madar2023">
+    <div class="offcanvas-header">
+      <h5>2023. év madara</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Barkóscinege</h3>
+      <img src="barkósc.jpg"; width="300px"; height="170px">
+      <p>Hazánk nádasaiban elterjedt madárfajnak számít. Társas faj, a többi nádi énekesmadárral ellentétben nem territoriális viselkedésű. Állandó, télen is a nádasokban figyelhető meg, ahol kisebb-nagyobb csapatokban a nád magját fogyasztja. Tavasszal és nyáron rovarokkal, apró csigákkal és pókokkal táplálkozik. A vizes élőhelyek megőrzésével állománya biztosítottnak látszik.</p>
+        <img src="barkósc1.jpg"; width="300px"; height="170px">
+      </p><b>Élőhelye, költése:</b></p>
+      </p>Európai elterjedése rendkívül mozaikos, szigetszerű, ázsiai költőhelyei nagyobb, egybefüggő területeket alkotnak. A vizes élőhelyek nádasaihoz, gyékényeseihez kötődik. Fészkét igen változó magasságban, a nád vagy gyékény megtört szálaira rakja. Nem igényli az öreg, avas nádasokat, már a másodéves állományokban is megtelepszik. Egy évben két-három fészekaljat nevel. A fészekalj 4-8 tojásból áll, melyen a szülők felváltva kotlanak. Előszeretettel bujkál a sűrű nádasban, csilingelő hangja azonban elárulja jelenlétét.</p>
+        <img src="barkósc2.jpg"; width="300px"; height="170px">
+      </p><b>Hazai előfordulás:</b></p>
+      </p>Magyarországon viszonylag gyakori fészkelő. Hazai állománya állandó, részben rövid távú vonuló, telelőterülete Dél-Európa. Kisszámú, rendszeres átvonuló. Kis számban, rendszeresen áttelel. Fészkelőállománya 5400 – 6300 pár (2017–2018, statisztikai becslés párok becslési adatai alapján). Fészkelőállományának trendje bizonytalan (1999–2021).</p>
+        <img src="barkósc3.jpg"; width="300px"; height="170px">
+    </div>
+  </div>
+<!--23vége-->
+<!--22-->
+  <div class="offcanvas offcanvas-end" id="madar2022">
+    <div class="offcanvas-header">
+      <h5>2022. év madara</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Zöld küllő</h3>
+      <img src="zöld.jpg"; width="300px"; height="170px">
+      <p>Gyakori harkályfélénk. Fő táplálékát a hangyák jelentik, de a fák kérge alatt megbújó más rovarokat és azok lárváit, bábjait is elfogyasztja. Rendszeresen keresgél a talajon is. A hideg idő beálltával gyümölcsöket és magvakat is eszik, de előszeretettel bontja ki a hangyabolyokat, melyekben hangyákat és lárvákat keres. Állandó madár, de télen kóborolhat. Idős fák meghagyásával segíthetjük, hogy állománya ne csökkenjen.</p>
+        <img src="zöld1.png"; width="300px"; height="270px">
+      </p><b>Élőhelye, költése</b></p>
+      <p>Szinte egész Európában elterjedt, de költ Délnyugat-Ázsiában is. Sík és hegyvidéken egyaránt megtalálható. Kedveli a ligetes erdőket, fasorokat, városi parkokat, temetőket, ártéri erdőket, de a zárt állományokat elkerüli. Odúban költ, amit maga készít és akár több évig is használ. Évente egy fészekaljat nevel. Rendszerint 5-7 tojást rak. Sík vidéken elhagyott odúját szívesen foglalja el a fokozottan védett szalakóta. Jellegzetes „klü-klü-klü-klü-klü” hangját már március közepén hallatja. Sokszor nehéz észrevenni, mivel veszély, az őt figyelő ember elől gyakran a fa törzse mögé rejtőzik, a törzs másik oldalán keresgél és eközben pillanatokra oldalt kipillantva tartja szemmel az eseményeket (ez a viselkedés figyelhető meg a "Média" fejezetben látható első videón).</p>
+        <img src="zöld2.jpg"; width="300px"; height="270px">
+      </p><b>Hazai előfordulás:</b></p>
+      <p>Magyarországon gyakori fészkelő. Hazai állománya állandó. Fészkelőállománya 15 000 – 17 000 pár (2014–2018, statisztikai becslés alapadatok alapján). Fészkelőállományának trendje mérsékelten növekvő (1999–2021).</p>
+    </div>
+  </div>
+<!--22vége-->
+<!--21-->
+  <div class="offcanvas offcanvas-end" id="madar2021">
+    <div class="offcanvas-header">
+      <h5>2021. év madara</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Cigánycsuk</h3>
+      <img src="csigany.jpg"; width="300px"; height="170px">
+      <p>A rozsdás csukhoz hasonló megjelenésű madár, de nincs fehér szemsávja és fehér faroktükre. Feje egyöntetű barna, melynek köszönhetően sötétebb habitusú a rozsdás csuknál. Territoriális viselkedésű, a hímek sokat énekelnek a revír kimagasló pontjain. Párba álláskor nászrepülésük is megfigyelhető. Igazi vártamadár: kimagasló pontokról lesi rovarokból, pókokból és más ízeltlábúakból álló zsákmányát. Ritkán apró termetű csigákat is eszik. Télen, állati táplálék hiányában elfogyasztja a magvakat, bogyókat is. A hazai, és a tőlünk északabbra található populációk egyedi vonulók, a telet a mediterráneumban és Észak-Afrikában töltik. Telelőhelyéről igen korán, legtöbbször már március elején visszatérnek első példányai. Nálunk gyakori fészkelőnek számít</p>
+        <img src="csigany1.jpg"; width="300px"; height="250px">
+      </p><b>Élőhelye, költése</b></p>
+      <p>Európa, Ázsia és Afrika nagy részén elterjedt fészkelőnek számít. Több alfaja is ismert. Hazánkban sík- és dombvidékeken fordul elő, a hegységeket és zárt erdőket elkerüli. Kedveli a fákkal, cserjékkel tarkított nyílt élőhelyeket. Megtalálható mezőgazdasági területeken, parlagokon, csatornapartokon, gyümölcsösökben. Évente kétszer költ. A fészek helyét a tojó alakítja ki kis kaparással a talajon, a sűrű növényzet takarásában. Építőanyagként növényi szálakat, gyökérdarabokat és mohát használ, a fészek belsejébe szőröket és tollakat helyez. Átlagosan 5-6 tojást rak, melyeken kizárólag a tojó kotlik. A fiókákat mindkét szülő eteti. A táplálékot rendkívül óvatosan, nagy körültekintéssel szállítják a fészekhez, mivel a nyílt élőhelyeken a ragadozók miatt fokozott veszélynek van kitéve fészekalja.</p>
+        <img src="cigany3.jpg"; width="300px"; height="250px">
+      </p><b>Hazai előfordulás:</b></p>
+      <p>Magyarországon igen gyakori fészkelő. Hazai állománya hosszú távú vonuló , telelőterülete Észak– és Kelet–Afrika szubtrópusi része. Rendszeres átvonuló. Fészkelőállománya 195 000 – 210 000 pár (2014–2018, statisztikai becslés alapadatok alapján). Fészkelőállományának trendje mérsékelten csökkenő (1999–2021).</p>
+    </div>
+  </div>
+<!--21vége-->
+
+
+
+
+<!-- ablak az év emlőséhez -->
+
+<!--25-->
+  <div class="offcanvas offcanvas-end" id="emlose2025">
+    <div class="offcanvas-header">
+      <h5>2025. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Magyar szöcskeegér</h3>
+      <img src="szeger1.png"; width="300px"; height="280px">
+      <p>A magyar szöcskeegér (Sicista trizona) létezéséről az ezredforduló előtt még mit sem tudtunk. Kis túlzással, annyi bizonyos volt, hogy élt Magyarországon egy különleges kisemlős, amely bár nevében egér, de csak nagyon távoli rokonságot ápol a közönséges egerekkel. Viselkedésében és életmódjában is egészen egyedi, például az egerektől eltérően valódi téli álmot alszik, évente csak egyszer szaporodik és táplálékának jelentős részét képezik a rovarok. Ráadásul nagyon szelíd, kézben tartva nem harap, nem próbál elmenekülni.</p>
+      <img src="szeger.jpg"; width="350px"; height="300px">
+      <p>Az egykor sokfelé előforduló, hátán hosszanti fekete csíkot viselő szöcskeegér (nem tévesztendő össze a hazánkban gyakori pirók erdeiegérrel) élőhelyeinek megszűnése miatt az elmúlt 150 évben egyre ritkábbá vált, olyannyira, hogy az utolsó példányt 1936-ban fogták meg a kutatók. Hetven éven át senki nem találkozott egyetlen élő példánnyal sem, és akár kipusztultnak is hihettük volna, ha nincsenek olyan „szakértők”, akik ez idő alatt is jó néhányat tudtak fogni belőle. Ezek a „szakértők” pedig nem voltak mások, mint a baglyok, az éjszaka rendíthetetlen „adatgyűjtői”, akik a szőröstül-bőröstül lenyelt zsákmány emészthetetlen (csont, szőr vagy toll) részeit kis köpetek formájában szétszórják pihenőhelyeik közelében. Ezekből gondos kutatói kezek összegyűjtenek évi néhány ezret és a bennük lévő csontokból meg tudják állapítani, hogy milyen „mintát” gyűjtöttek a baglyok táplálékszerzésük során. Ilyen bagolyköpet-elemzésekből tudtuk, hogy a szöcskeegér továbbra is tagja a magyar faunának, éli rejtett életét, igaz, egyre kevesebb és kevesebb helyen.</p>
+      <img src="szeger2.jpg"; width="300px"; height="170px">
+      <p>A rejtőzködésnek végül 2006-ban lett vége, amikor magyar kutatók a Borsodi-Mezőségben több éves próbálkozás után végre befogtak egy élő példányt. A szenzációk sora azonban a megtalálással nem ért véget, sőt! A következő évtized kitartó kutatásai, genetikai és morfológiai vizsgálatai ugyanis azt igazolták, hogy a nálunk élő szöcskeegér nem azonos a keleti sztyeppéken elterjedt más rokon fajokkal, hanem teljesen különálló faj. Ezzel nemcsak a tudományos, hanem a magyar neve is megváltozott, így már nem a csíkos szöcskeegér, hanem a sokkal találóbb magyar szöcskeegér névre hallgat. A fajnak jelenleg mindössze két aprócska állományát ismerjük a világon, egyik a már említett Borsodi-Mezőségben él, a másik egy Kolozsvár melletti élőhelyen. Ráadásul a két állomány alfaji szinten eltér egymástól, ezért külön nevet is kaptak: az Erdélyi-medencében az erdélyi szöcskeegér honos.</p>
+    </div>
+  </div>
+<!--25vége-->
+<!--24-->
+  <div class="offcanvas offcanvas-end" id="emlose2024">
+    <div class="offcanvas-header">
+      <h5>2024. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Vadmacska</h3>
+      <img src="vadmacska.jpg"; width="300px"; height="170px">
+      <p>Az európai vadmacska (Felis silvestris) rendkívüli mértékben hasonlít az egyik leggyakrabban tartott házi kedvenchez, a házi macskához (Felis catus). Bár vannak jellegzetes eltérések, többek között a bundamintázatban, a tömött, gyűrűs farokban és a zömök testalkatban, elkülönítésüket nehezíti – és egyben a vadmacskát is jelentősen veszélyezteti –, hogy a vadmacska és a házi macska között keveredés (hibridizáció) tapasztalható. Amennyiben a vadmacska-állomány erős és összefüggő, emellett kiterjedt élőhely is rendelkezésére áll, az egyedek egymással könnyen találkozhatnak. Ilyenkor nem keresik házi macskák közelségét, sőt üldözik őket. Amint viszont megfogyatkozik és megritkul egy állomány, egyre nehezebb a pártalálás a vadmacskák között. Ilyenkor elfogadják, akár kifejezetten keresik a házi macskák társaságát, és azokkal párosodva hibrid utódjaik lesznek. Ezek az utódok már viselkedésükben és küllemükben is eltérnek az „igazi”, tisztavérű vadmacskáktól. E folyamat előrehaladtával egyre több és több lesz a hibrid egyed, és azok leszármazottai egyre jobban eltávolodnak az eredeti vadmacskavonaltól, így végül lassan, de biztosan felmorzsolódik az érintett állomány.</p>
+      <img src="vadmacska2.jpg"; width="300px"; height="300px">
+      <p>Bár küllemében nagyon hasonlít a házi macskához, az európai vadmacska életmódjában, viselkedésében is vérbeli vadállat. A Skóciától Dél-Európáig, keletre pedig a Kaukázus hegyvonulataiig megtalálható ragadozó a nappalokat a sűrű erdők, bozótosok mélyén, sziklaüregekben, fák odvában meghúzódva tölti. Az éjszaka leple alatt a nyíltabb terepen, erdei tisztásokon türelmesen vadászik. Áldozatát legtöbbször lesből támadva, hirtelen kapja el. Tápláléka csaknem kizárólag frissen elejtett állatokból áll. Étlapján a rágcsálók épp úgy szerepelnek, mint a madarak, de akár üregi nyúl méretű zsákmányt is ejthet. Táplálékösszetétele elsősorban a kínálat függvénye. Mezei pockokban bővelkedő években (gradációkor) sok vadmacska szinte kizárólag ezen mezőgazdasági kárt is okozó rágcsáló ritkításával elégíti ki táplálékigényét.</p>
+      <img src="vadmacska1.jpg"; width="300px"; height="170px">
+      <p>A genetikai vizsgálatok elérhetőségének egyszerűsödésével csak a jövőben fog lassan kirajzolódni a vadmacskaállományok valódi természetvédelmi helyzete, az azonban már most is látszik, hogy vannak olyan területek, ahol a hibridizáció jelentős mértékben előrehaladott. Az is biztosan tudható már, hogy a felelős házi macskatartás keretében a házi kedvencek következetes ivartalanítása és portán belül tartása óriási jelentőségű a vadmacskák hosszútávú fennmaradása érdekében. Ez tehát a mi személyes felelősségünk, amit az oly értékes és sérülékeny biológiai sokféleség megőrzése érdekében tehetünk és tennünk kell!</p>
+    </div>
+  </div>
+<!--24vége-->
+<!--23-->
+  <div class="offcanvas offcanvas-end" id="emlose2023">
+    <div class="offcanvas-header">
+      <h5>2023. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Vakond</h3>
+      <img src="vakond.jpg"; width="300px"; height="170px">
+      <p>A közismert és közkedvelt, zsebes nadrágos kisvakond rajzfilmfigurát ihlető vakondot (Talpa europaea) nem nagyon kell bemutatnunk. A tömött, koromfekete bundájú, hengeres testű kisemlősünk rövid, három centiméteres farkával együtt is alig hosszabb, mint egy szokványos golyóstoll. Élete jelentős részét a föld alatt tölti, apró szemei, bőrredővel lezárható, fülkagyló nélküli fülnyílásai, hosszú, ormányszerű orra és feltűnő mellső ásólábai mind a speciális életmódhoz való alkalmazkodás jegyei.</p>
+      <img src="vakond1.jpg"; width="300px"; height="300px">
+      <p>A földművelésügyi miniszter 1901. évi 24.655. számú körrendelete a mezőgazdaságra hasznos állatok oltalmazása érdekében több mint száz madárfaj és néhány más emlősfaj mellett, a vakondot is természetvédelmi oltalom alá helyezte, akkor még csak „a virágos, veteményes kertek és csemete ültetvények”-en kívüli területeken. Az azóta teljes védettséget élvező rovarevőnk pénzben kifejezett természetvédelmi értéke ma 25.000,- Ft.</p>
+      <img src="vakond2.jpg"; width="300px"; height="170px">
+      <p>A mozgékony állatkával sokkal ritkábban találkozhatunk, mint jelenlétének közvetett bizonyítékaival, a vakondtúrásokkal, amelyek az akár 100 méternél is hosszabb, elágazó járatrendszeréből összegyűjtött talaj szakaszonként felszínre hozott kupacai. Skandinávia és egyes mediterrán területek kivételével egész Európában elterjedt, hazánkban is, a mocsaras, köves, szikes területek és az intenzíven művelt szántóktól eltekintve szinte minden élőhelyen megtalálható.</p>
+      <img src="vakond3.jpg"; width="300px"; height="170px">
+      <p>A kertekben megjelenő túrások olykor bosszúságot okozhatnak, ez azonban eltörpül, ha a vakond talajlazító, valamint rovarkártevő-gyérítő szolgáltatásait is figyelembe vesszük. Hiszen a rovarevőkre jellemző módon, kizárólag állati táplálékot, elsősorban a föld alatt mozgó férgeket, csigákat, rovarokat és azok lárváit fogyasztja. Meg kell tanulnunk, hogy a természettel való együttélés során a többi élőlénynek, köztük a vakondoknak is hagynunk kell életteret, megosztva kertjeinket ezekkel a hasznos kis buckalakó bundagombócokkal is.</p>
+    </div>
+  </div>
+<!--23vége-->
+<!--22-->
+  <div class="offcanvas offcanvas-end" id="emlose2022">
+    <div class="offcanvas-header">
+      <h5>2022. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Törpeegér</h3>
+      <img src="törpeegér.jpg"; width="300px"; height="170px">
+      <p>Hazánk egyik legkisebb emlőse a törpeegér. Nála csak a törpecickány és a törpedenevér kisebb hazánkban. A törpeegér súlya annyi, mint egy félig tele gyufaskatulya. Vagy mint egy zacskónyi sütőpor. Félujjnyi testhosszának a felét a kapaszkodásra is alkalmas farka teszi ki.</p>
+      <img src="törpeegér2.png"; width="300px"; height="300px">
+      <p>Most tavasz van, előbújnak a törpeegerek is a sűrű bozótosok aljáról. Mit csinálsz te törpeegér, mikor télen mindent hó borít, minden pocsolyát jégkérget fed? Igazi téli álomba merülsz, mint a pelék a cickányok, vagy mint a denevérek? Dehogy, nem vagy te ilyen álomszuszék. Száraz fűcsomók, kórószárak tövében szöszmötölsz, keresed az őszről ott maradt, lehullott fűmagot, piciny termésmaradványokat. Csak kihúzod az ínséges hónapokat így, aztán mikor már az első kankalinok és kökörcsinek kibontják csodaszép sziromruhájukat, felkerekedsz a bokorágak, kórószárak magaslataiba és ott ügyesen egyensúlyozva, hosszú farkaddal kapaszkodva kezded el építeni az ágvillák ölelésébe gyerekökölnyi, száraz fűszálakból font gömbfészkedet.</p>
+      <img src="törpeegér1.jpg"; width="300px"; height="200px">
+      <p>A tavaszi szerelem és három hét után már a nád puha és meleg bugájával bélel lakában akár hat, eleinte még vak és csupasz kölyök keresi szülőanyját. Nem telik el két hét és már önállóak a fiatalok, bár eleinte még az anyjuk vissza- visszajár megszoptatni őket. De aztán, uccu neki és máris a nádasok bugáinak szárain, sövényekben és bozótos erdőszegélyek ágvilláin, szúrós kórószárakon akrobatikáznak, bújócskáznak a selymes, világos barna bundájú fiatal törpeegerek.  Azonban pár hét múltán már újabb alomnak adnak otthont a kicsiny gömbfészkek, sokasodnak a törpeegerek. És újra indul a történet. A kicsik szeme a nyolcadik napon nyílik ki, tizenkét napos korukig szopnak és tizenhat napos korukra már önállóak is. Olyan ügyesek, hogy már kétnapos korukban tudnak kapaszkodni, és ide-oda mászkálnak a fészekben, négy nappal később pedig elkezdik önmagukat tisztítani. Kilenc napos korukra fogaik áttörik az ínyt, így szilárd táplálékot is tudnak már fogyasztani. Egy nappal később, mikor elérik a tíz napos korukat, anyjuk tejtermelése egyre csökken, és lassan rászoknak a kicsinyek a magevésre. Kis idő múltán már teljesen önállóak, elhagyják a szülői fészket.</p>
+      <video controls width="300px" height="200px">
+        <source src="Harvest Mouse (Grassland Gymnastics Mouse) (1).mp4" type="video/mp4">
+      </video>
+      <p>Nagy szükség is van a gyorsaságukra, ügyességükre, mert sokaknak fáj a foga egy kis törpeegér csemegére. Éjjel a baglyok lesnek az óvatosan mozgó piciny egerekre, de az ugyanekkor vadászó kisragadozók, menyétek, hermelinek, nyestek, nyusztok, de akár a macskák is belevetik magukat a bozótosba egy jó kis törpeegér zsákmány reményében. Na, ekkor dől el, hogy mennyire ügyesen menekül a törpeegér. Tudja-e gyorsan követni őt a rózsatövisek, cserjeágak szövevényébe a ragadozó? Vagy megmenekül, elrejtőzik a sövények szövevényes labirintusában bújó törpeegér?
+
+        Mindenesetre Magyarországon a törpeegér védett állat, igaz ez a védelem nem a ragadozókra, hanem az emberekre, azok sokszor természetkárosító viselkedésére vonatkozik.</p>
+    </div>
+  </div>
+<!--22vége-->
+<!--21-->
+  <div class="offcanvas offcanvas-end" id="emlose2021">
+    <div class="offcanvas-header">
+      <h5>2021. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Hermelin</h3>
+      <img src="hermeli.jpg"; width="300px"; height="170px">
+      <p>A királyi hermelinpalástok hófehér színét, benne az apró fekete pöttyökkel, az állat téli bundája adta. Télen ugyanis – a hazai és északabbra eső területeken – a hermelin fehér bundát ölt, csak a farka vége marad még ekkor is fekete. Ezekből a farokvégekből származtak a fekete csíkokat a paláston. Tavasszal aztán levedli fehér szőrszálait és hátán, oldalán rozsdabarna bundát ölt, csak a fehér hasoldal és a fekete farokvég emlékeztet téli önmagára. A hófehér hermelin a havas tájban szinte észrevehetetlen. Ahogy azonban a vizeket fehér jéggé fagyasztó dermesztő hidegek, a szikrázó, havas telek egyre ritkulnak, rövidülnek, a fehér hermelin is egyre gyakrabban marad világítóan feltűnő a sötét téli talajon. A színváltásból eredő előny hátránnyá válik, így szépen lassan elmarad a bundaszín-váltás is. Azok az egyedek, amelyek nem, vagy csak részlegesen váltanak színt, előnyre tesznek szert. Több utóduk lesz, és így a nyári mintásan maradó hermelin is egyre gyakoribbá válhat. A folyamat nem gyors; tartós és állandósuló klimatikus változás mellett zajlik. Egy újabb egyértelmű példa klímánk egyirányú változására adott természetes reakcióra. Így a fehér hermelin már-már olyan ritka lesz, mint a fehér holló.</p>
+      <img src="hermelin1.jpg"; width="300px"; height="300px">
+      <p>A hermelin esetében – a kisragadozók közt szokatlan módon – a hímek és nőstények között szinte nincs is testméretbeli átfedés. Azaz a legnagyobb nőstény sem nagyobb, mint a legkisebb hím. Ez a méretkülönbség azt is jelenti, hogy nincsenek közös vacsorák a „családban”, hiszen a hímek és nőstények más méretű zsákmányra vadásznak (persze magányos állatok lévén, a két nem képviselői egyébként is csak szaporodási időben találkoznak hosszabban). Ugyan mindkét ivar esetében igaz, hogy vérmes vadászok és szinte kizárólag állati eredetű táplálékmaradványok azonosíthatóak ürülékükből, míg a nőstény hermelin a zsákmányszerzés során például a mezei pockot akár a járatrendszerébe is követni tudja, addig a nagyobb hím erre nem képes. Ő inkább hörcsög- vagy ürgelyukakban tanyázik és e kisemlősök mellett kósza pockot vagy akár üreginyulat vacsorázik. A vízben is ügyesen mozognak, úgyhogy zsákmányukat akár ott is el tudják ejteni.</p>
+      <img src="hermelin2.jpg"; width="300px"; height="200px">
+      <p>Egyáltalán nem mindegy a hermelinnek, hogy hol üt tanyát, hiszen olyan vidék kell neki, ahol a nőstények és a hímek is megtalálják életfeltételeiket. Előszeretettel választ változatos, természeteshez közeli, a biológiai sokféleség szempontjából is értékes területeket. Többféle élőhelyfolt, széles táplálékkínálat és különböző típusú és méretű búvóhelyek jellemzik lakóhelyeit. Az idegenhonos inváziós növényekkel erősen fertőzött, vagy az intenzív mezőgazdasági művelés alatt álló, fajszegény, pláne erősen vegyszerezett foltok mellett, az ember folyamatos jelenlétét sem viseli jól, a települések közelségét kerüli. Mindebből tudhatjuk, hogy ahol hermelin fordul elő, ott általában közel érintetlen, jó természetességű vagy természetvédelmi szempontból is kedvezően kezelt természetes élőhelyet találunk.</p>
+      <img src="hermelin3.jpg"; width="300px"; height="200px">
+      <p>Térképen ábrázolva a hermelin országos elterjedését, szinte az egész országot lefedő, nagy foltot rajzolhatnánk - elméletileg. Ez persze azt a téves látszatot keltené, hogy egy közönséges, mindenütt elterjedt fajról van szó, pedig egyáltalán nincs így. A hermelin elterjedése ugyanis nagyon sok, apró foltból áll valójában, ahol a potenciális élőhelyfoltok az országban szinte bárhol előkerülhetnek. A legnagyobb valószínűséggel a zavartalan, vízparti vagy vízhez közeli élőhelyfoltokban találjuk meg, de előfordulhat minden olyan helyen, ahol az előző bekezdésben leírt sokféleséget megtalálja. Nem készült még olyan átfogó állományfelmérés Magyarországon, amely alapján meg tudnánk mondani a hermelin tényleges elterjedését és megbecsülhetnénk az állományméretét. Ennek egyik oka, hogy nagyon nehéz, sok időt és energiát igénylő feladat ezt a kimondottan rejtőzködő kisragadozót megtalálni. A másik ok is összefügg a hermelin életmódjával: nagyon nehéz olyan hatékony módszert találni, amely alkalmas lenne rá, hogy országos léptékben felmérhessük vele a hermelin-állományt.</p>
+      <img src="hermelin4.jpg"; width="300px"; height="200px">
+      <p>Nagyon nehéz megtervezni egy állatfaj védelmét, ha kevés tudományos adat áll rendelkezésre annak elterjedéséről, speciális igényeiről és az őt veszélyeztető tényezőkről. Rendelkezünk persze járulékos adatokkal, hiszen más rokon-, illetve hasonló élőhelyeken élő állatfajok állományfelmérése közben a hermelinről is kapunk adatokat, azonban egy célzott, országos felmérés nagyon fontos és időszerű lenne. A faj ökológiájáról gyűjtött újabb ismeretek alapot jelenthetnek a hermelin állomány fennmaradását segítő védelmi intézkedésekhez. Az állományt segíti a jó természetességű, lehetőleg vízközeli, annak hiányában cserjefoltokkal, facsoportokkal tarkított gyepterületek, vagy kíméletesen művelt (mezsgyesávokkal, fasorokkal, sövényekkel tarkított, nem vegyszerezett, kistáblás) mezőgazdasági területek védelme, kialakításuk elősegítése, ahol ráadásul az emberi zavarás is kicsi. A magas biológiai sokféleség (biodiverzitás) megtartása, javítása, az idegenhonos inváziós fajok visszaszorítása mind a kedvező irányba hat. Ezek mellet a célzott állományfelmérés és monitorozás, a kutatás alapvetően fontos információt szolgáltathat a hatékony további intézkedések megtervezéséhez és kivitelezéséhez. A lelőhelyadatokkal és fényképpel dokumentált alkalmi megfigyelések első lépést jelenthetnek a faj állományhelyzetének feltárásában.</p>
+    </div>
+  </div>
+<!--21vége-->
+<!--20-->
+  <div class="offcanvas offcanvas-end" id="emlose2020">
+    <div class="offcanvas-header">
+      <h5>2020. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Vidra</h3>
+      <img src="vidra.jpg"; width="300px"; height="170px">
+      <p>A vidra vizeink egyik csúcsragadozója, ami azt is jelenti, hogy elsősorban állati eredetű táplálékon él. Tavasztól kezdődően az év során egyre nagyobb a táplálékában a halak aránya, melyek közül a legyengült és kisebb méretű, nagy tömegben előforduló, sokszor idegenhonos inváziós halakat (pl: ezüstkárász, naphal, törpeharcsa, amurgéb) részesíti előnyben.
+
+        Egy kilogrammnál nagyobb, tehát komolyabb gazdasági jelentőségű halakat szinte sosem fog meg. Ennek egyszerű oka, hogy a nagyobb halak elejtése jelentős energiabefektetést igényelne tőle, ami nem térül meg számára, mert sem helyben elfogyasztani, sem eltárolni nem tudja az ilyen méretes halakat.
+        
+        Tavasszal, illetve nyáron kétéltű fogyasztása is jelentős lehet, de olykor-olykor emlős és madár préda is szerepel az étlapján, a fiatal egyedek pedig előszeretettel fogyasztanak még ezeknél is könnyebben elérhető gerincteleneket: csigákat, kagylókat, férgeket, vagy rovarokat.</p>
+      <img src="vidra1.jpg"; width="300px"; height="300px">
+      <p>Vidráink az év bármely szakában szaporodhatnak, bár a tél végi párzás a legjellemzőbb. A 60-75 napos vemhességet követően az újszülöttek szeme még 30 napig is zárva lehet.
+
+        A hosszú utódgondozás során, játékos viselkedésükkel kísérve, a fiatalok eltanulják szüleiktől az úszástól kezdve a vidralét minden csínyját-bínját, hiszen gyakran születésük után még egy évvel is a "mama hotel" szolgáltatásait veszik igénybe.
+        
+        A két éves korukra ivaréretté váló vidrák megpróbálnak maguknak territóriumot foglalni, de addig is magányos vándorként, saját terület nélkül barangolnak a vízfolyások, tavak mentén.</p>
+      <img src="vidra2.jpg"; width="300px"; height="200px">
+      <p>A vidra minden porcikájában a vízi életmódhoz alkalmazkodott. Testfelépítésükre jellemző, hogy áramvonalas, torpedó alakú testüket rendkívül dús, jó hőszigetelésű szőrzet borítja, mely a vízhatlanságát is biztosítja az egyedek számára. A bőrük alatt vastag szigetelő zsírréteget nem halmoznak fel, így a bunda gondozásával, víztaszító állapotának fenntartásával és tisztán tartásával sok időt töltenek.
+
+        A vadászathoz szükséges gyors úszását ujjai között feszülő úszóhártyák segítik. Hosszú bajuszszálaival érzékelve a zavaros, átláthatatlan vízben is könnyen megérzi az akadályokat így ilyenkor is gyorsan és ügyesen navigál.</p>
+      <img src="vidra3.jpg"; width="300px"; height="200px">
+      <p>A vidrának természetes ellensége nem nagyon van, esetleg a nagyon felerősödött rókaállomány és a kóbor kutyák lehetnek veszélyesek rájuk nézve.
+
+        Sajnos a vizek szennyezése komoly, sokszor nehezen kimutatható módon csökkenti a vidraállomány méretét, mivel a táplálékul szolgáló halakban felgyülemlő méreganyagok, nehézfém-származékok a szervezetükbe jutva megbetegíthetik, vagy el is pusztíthatják ezeket a szép állatokat.
+        
+        A vízpartok közelében húzódó autóutak káros hatásairól az utak mentén talált nagyszámú elütött példány tanúskodik.
+        
+        Sajnos a tudatlanságból, felkészületlenségből elkövetett szándékos emberi pusztítás is komoly veszélyt jelenthet az állományra.</p>
+      <img src="vidra4.jpg"; width="300px"; height="200px">
+      <p>Jelenleg természetvédelmi helyzetük világviszonylatban nem megnyugtató, de Magyarországon egyelőre viszonylag jelentős, nagy egyedszámú állományait találjuk. A mi feladatunk tehát ennek az állománynak a megőrzése, védelme.
+
+        Az eurázsiai vidra fokozottan védett hazánkban, pénzben kifejezett értéke 250 000.- Ft. Zavarása, veszélyeztetése, vagy elpusztítása jogszabályba ütközik, szélsőséges esetben akár börtönbüntetéssel is sújtható.
+        
+        A mezőgazdasági munkák során használt kemikáliák (műtrágya, növényvédőszer) mennyiségének jelentős csökkentése, a vizeket terhelő méreganyagok kivonása a forgalomból jelentősen hozzájárulhat a vidrák egészségi állapotának javításához.
+        
+        A vidrák védelmében a veszélyes, partmenti útszakaszokon az óvatos, figyelmes vezetéssel – pláne a szürkületi, éjszakai órákban – sok vidra életét menthetjük meg.</p>
+        <img src="vidra5.jpg"; width="300px"; height="200px">
+        <p>A vidra jelenléte elegendő táplálék, és viszonylagosan zavartalan környezeti viszonyokat jelez. Azok a tavak, tórendszerek tehát, ahol vidra nyomait láthatjuk a parton, esetleg jellegzetes ürülékkupacait fedezhetjük fel, vagy nagyon szerencsés esetben magát az állatot is megpillanthatjuk, biztosan nem halott vizek.
+
+          A vidra a sérült, gyengébb, illetve idegenhonos inváziós halak és rákok pusztításával az élővizek őshonos élővilágának fennmaradásához is hozzájárul.
+          
+          </p>
+    </div>
+  </div>
+<!--20vége-->
+<!--19-->
+  <div class="offcanvas offcanvas-end" id="emlose2019">
+    <div class="offcanvas-header">
+      <h5>2019. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Hiúz</h3>
+      <img src="hiúz.jpg"; width="300px"; height="200px">
+      <p>Magyarországon 1993 óta fokozottan védett nagyragadozó faj, pénzben kifejezett természetvédelmi értéke 500.000 Ft. Az Európai Unió Élőhelyvédelmi Irányelvén is a különösen veszélyeztetett fajok listáján is szerepel.
+
+        Franciaországan az 1900-as évek elején lőtték ki az utolsó hiúzt, de napjainkra komoly és költséges visszatelepítési programoknak köszönhetően újra él a Vogézekben és a Pireneusokban, sőt 2005-ben már Belgiumba is áttelepült pár példány belőlük. Németországban már az 1850-as években kipusztult és csak az 1990-es évekre sikerült visszatelepíteni a Bajor erdőbe valamint a Harz hegységbe. A svájci Alpokból a kíméletlen vadászat miatt 1915-ben eltűnt, azonban az 1970-es években sikerült visszatelepíteni. Sőt Horvátországban olyan kiemelt természetvédelmi értéket tulajdonítanak a hiúz repatriációjának, hogy a Risnjak Nemzeti Park is az ő nevét vette fel. Ez a pár adat is jól szemlélteti, milyen viszontagságos  sors jutott Európa legnagyobb termetű nagymacskájának, az eurázsiai hiúznak kontinensünk nyugati fertályán. 
+        
+        Magyarország faunájából  a vadászirodalmi források szerint az első világháború környékén tűnt el, azonban arról, hogy valóban meddig nem élt nálunk hiúz és biztosan kipusztult-e a hazai területekről a világháború után, biztos adatokkal nem rendelkezünk.
+        
+        Az 1980-as években már több észlelés is bizonyossá tette, hogy erdeinkben újra él és szaporodik ez a nagymacska faj. Napjainkban különböző nyomok (lábnyom, hullaték, szőr stb.) valamint kameracsapda-felvételek sokasága bizonyítja tartós megtelepedését az Északi-középhegység számos pontján, elsősorban a Börzsöny, a Bükk, a Tarna vidéki dombság, az Aggteleki karszt valamint a Zempléni-hegység erdeiben.</p>
+      <img src="hiúz1.jpg"; width="320px"; height="300px">
+      <p>Bár az Északi-középhegység számos pontján jelen van a hiúz, ugyanakkor ez a viszonylag széles elterjedési sáv optimista szakértői becslések szerint is mindössze 15-20 példányt jelent. Európai viszonylatban (beleértve a Skandináv-félsziget hiúzpopulációit is) 9 000-10 000 egyedre teszik az állomány nagyságát, ebből a Kárpátok vonulatai mintegy 2 300-2 400 példánynak adnak otthont.
+
+        Ritkaságának egyik oka, hogy a hiúz ragaszkodik a zavartalan, sűrű és idős erdőkhöz, onnan önszántából nem teszi ki a mancsát. És mi tagadás, egyre kevesebb az olyan koreloszlással, lomb- és cserjeszerkezettel rendelkező, nagy kiterjedésű erőség hazánkban, de a Kápátok hegyláncain is, ahol ezt a fajta nyugalmat, biztonságot megtalálná. A szaporodás- és kölyöknevelési időszakban gyakori hajtóvadászatok vagy intenzív erdőművelés megzavarhatja és elriaszthatja ezeket a rejtett életmódot folytató, óvatos ragadozókat. Az átlagosan 20-25 kg-os kifejlett hiúz (ugyanakkor a hímek elérhetik a 30-35 kg-ot, marmagasságuk pedig a 70 cm-t is) ugyanis szigorúan területtartó és magányosan él, kerüli az ember lakta területeket. A hiúz többnyire alkonyatkor kezdi a napját, de párzási időszakban nappal is mozoghat. Nappali pihenőjét általában egy rejtett helyen tölti, ami lehet egy sziklahasadék, barlang előtere, kidőlt öreg fa alatti vacok. Étlapján elsősorban erdei egerek, pockok, őzek, rókák szerepelnek, de a szarvasborjút is leránthatja, ha a tehén nem tudja megvédeni.</p>
+    </div>
+  </div>
+<!--19vége-->
+<!--18-->
+  <div class="offcanvas offcanvas-end" id="emlose2018">
+    <div class="offcanvas-header">
+      <h5>2018. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Földikutya</h3>
+      <img src="földikutya.jpg"; width="300px"; height="200px">
+      <p>A felszín alatti környezet merőben új kihívások elé állítja az ott élő fajokat. A földikutyák pedig az összes rágcsáló közül a legszélsőségesebben alkalmazkodtak ehhez a nagyon különleges élettérhez. Olyannyira, hogy gyakorlatilag egész életüket a talajban töltik, anélkül, hogy bármely életszakaszukban is kénytelenek lennének azt elhagyni. E szélsőséges alkalmazkodás talán legnyilvánvalóbb bizonyítéka, hogy a földikutyák az egyetlen valóban vak csoport a rágcsálók között.
+
+        A többi földikutyához hasonlóan a délvidéki földikutya is száraz, nyílt, füves-bozótos élőhelyeken él, a zárt erdőségeket és a vizenyős területeket kerüli. Kizárólag növényi étrendet fogyaszt, gyökerek, hagymák, gumók tarackok alkotják a táplálékát. Vízigényét a felvett táplálékból fedezi. Táplálékát elsősorban tavasszal és ősszel gyűjti, ilyenkor jelennek meg a táplálkozó járatokat jelző friss túrásai is. A téli és nyári időszakban rendszerint nem gyűjt táplálékot, ilyenkor a készleteiből él. Járatrendszerét folyosók, üregek és kamrák alkotják. Járatai állandóak és ideiglenesek lehetnek. Az állandó járatok fala kemény, mert az állat a kitúrt földet az orrával a falakba tömöríti. Rendszerint mélyen húzódnak, míg az ideiglenes vagy táplálkozó járatok a talajfelszín közelében, a gyökérzónában futnak és a kitúrt földet az állat túrások formájában a felszínre tolja. A járatrendszerhez üregek is tartoznak, külön kamrákat készít utódai gondozására, a táplálék raktározására és az ürülék elhelyezésére. Egy-egy földikutya, akár több mint száz méteres járathálózatot is készíthet, és mivel magányos életet él, mindegyik példánynak külön-külön járatrendszere van. A földikutya párzási időszaka január vége és március közé tehető. A partner megtalálása a járatok falán keltett, az adott fajra jellemző ritmusú „kopogtatás” alapján történik. A párzásra a fészeküregben kerül sor. A vemhesség időtartama mintegy 28 nap. A nőstények rendszerint évente ellenek. Az utódok száma 1-6 lehet, leggyakrabban azonban 2 vagy 4. Az állatok ivaréretté egy éves koruk táján válnak.
+        
+        Talajlakó életmódja a földikutyákat megvédi a legtöbb ragadozótól. Legnagyobb veszélyt az emberi tevékenység jelenti rájuk. Azonban ott, ahol nagy egyedszámú földikutya állományok találhatóak, a véletlenül felszínre tévedő egyedek is jelentős szerepet tölthetnek be a nappali ragadozók (parlagi sas, pusztai ölyv) és a baglyok (gyöngybagoly, uhu) zsákmányában.</p>
+      <img src="földikutya1.jpg"; width="320px"; height="300px">
+    </div>
+  </div>
+<!--18vége-->
+<!--17-->
+  <div class="offcanvas offcanvas-end" id="emlose2017">
+    <div class="offcanvas-header">
+      <h5>2017. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Mogyorós pele</h3>
+      <img src="mogyorós pele.jpg"; width="300px"; height="400px">
+      <p>A mogyorós pele (Muscardinus avellanarius) hazánkban 1974 óta védett, természetvédelmi értéke 50 000 Ft.
+
+        Elsősorban erdőmelléki cserjésekben, bozótosokban, bogyós termésekben gazdag bokorszinttel rendelkező erdőkben él.
+        
+        Nyugat-Európában az egyik legfontosabb tápláléka a mogyoró (neve is innen eredeztethető), míg a Kárpát-medence mogyoróspele-populációi sokkal szélesebb táplálékspektrumról választanak (som, makk, csipkebogyó, kökény, stb.).
+        
+        Alkonyati, éjszakai aktivitású rágcsáló, nappal jórészt a fészkében tartózkodik. Kétféle fűfészket készítenek: a kifejlett állatok alvófészke gömb alakú, oldalán a bejárattal, átmérője 60-80 mm. A költőfészek átmérője eléri a 90-120 mm-es nagyságot, jobban fűzött és puha béléssel (pl. termések repítőszőrei) rendelkezik. 
+        
+        Évente kétszer szaporodnak, az első ellésben általában több kölyök születik, számuk a hetet is elérheti. A fiatalok 18 nap után nyitják ki a szemüket, és mintegy 35-40 nap elteltével önállósodnak. Természetes körülmények között 4-6 évig is élhetnek.
+        
+        Magyarországon augusztus végétől májusig alszanak valódi téli álmot. A téli álom alatt a vérük hőmérséklete (testhőmérséklet) 0,25-0,5 ºC-ra zuhan (a normális testhőmérséklet 34-36ºC között van) és szívük percenként egyet dobban. </p>
+    </div>
+  </div>
+<!--17vége-->
+<!--16-->
+  <div class="offcanvas offcanvas-end" id="emlose2016">
+    <div class="offcanvas-header">
+      <h5>2016. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Denevér</h3>
+      <img src="denevér.jpg"; width="300px"; height="170px">
+      <p>Hazánkban 28 denevérfaj honos, melyek mind kinézetüket, mind életmódjukat tekintve rendkívül változatosak. Veszélyeztetett állatok, ezért minden fajuk védett, illetve több faj fokozott védettséget élvez. Denevéreinkre általánosan jellemző, hogy téli álmot alszanak, barlangokban, pincékben, panelépületek réseiben, illetve faodvakban vészelik át a táplálékszegény téli időszakot. Tavasszal, a melegebb idő beköszöntével a nőstények kölykezőhelyeikre vonulnak, melyek a telelőhelyektől akár több száz kilométeres távolságban is lehetnek. Nyáron különböző földalatti tanyahelyeken, barlangokban, felhagyott bányákban, pincékben, vagy épületek sötét padlásain bújhatnak meg, míg erdőlakó fajaink faodvakat, a törzsről leváló fakéreg mögötti réseket keresik fel. Egyes fajok vemhes nőstényei ilyenkor akár több ezer denevért számláló szülőkolóniákat is alkothatnak, ahol május-júniusban hozzák világra kölyküket, mely a legtöbb faj esetében egy utódot jelent évente. A kölykök gyorsan nőnek, nyár derekára már röpképessé válnak. Nyár végén és kora ősszel a denevérek párosodási időszaka következik, amikor is sok faj egyedei az ún. nászbarlangoknál gyűlnek össze. A denevérek éves ciklusa a telelőhelyek felkeresésével zárul, ha igényeiknek megfelelő, telelésre alkalmas helyet találnak, mély álomba merülnek.</p>
+      <img src="denevér1.jpg"; width="300px"; height="170px">
+      <p>A denevérek szürkület után aktívak, repülésük során ultrahangokat bocsátanak ki, melyek visszhangjait rendkívül érzékeny füleikkel fogják fel. Az agyuk ezek alapján képezi le környezetüket: tulajdonképpen a fülükkel látnak (ahogy a radar segítségével az éjszakai hajósok), de tájékozódásuk során a szemeiket is használják. A hazai denevérfajok mind rovarevők (a világ más tájain gyümölcsevő és vérfogyasztó rokonaik is ismeretesek). Sokféle ízeltlábút fogyasztanak táplálkozásuk során, előszeretettel és nagy mennyiségben kapják el az ember számára kellemetlen szúnyogokat, vagy a különböző mező- és erdőgazdasági kártevő rovarokat (lepkéket, bogarakat, kabócákat).</p>
+      <img src="denevér2.jpg"; width="300px"; height="170px">
+      <p>Sajnos sok faj állománya jelentősen meggyengült Európában, s e negatív tendencia hazánkban is érezhető: sok korábbi, igen jelentős állomány napjainkra felszámolódott. A denevérek kiemelten érzékenyek búvóhelyeik megváltozására, az ottani zavarásra, különösen a kölykezési, illetve a telelési időszakban. Az emberi tevékenység hatására táplálkozóterületeik is jelentősen visszaszorultak, különböző rovarirtószerek a denevéreket is mérgezték. Hazánkban szerencsére európai szinten is jelentős állományok élnek még, így időszerű és fontos védelmükre nagyobb erőfeszítéseket tennünk.</p>
+    </div>
+  </div>
+<!--16vége-->
+<!--15-->
+  <div class="offcanvas offcanvas-end" id="emlose2015">
+    <div class="offcanvas-header">
+      <h5>2015. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Ürge</h3>
+      <img src="ürge.jpg"; width="300px"; height="170px">
+      <p>Az ürge (Spermophilus citellus) a rágcsálók (Rodentia) rendjébe tartozó, 22-24 cm hosszú, karcsú testű, 7 cm farokhosszúságú állat. Fülei aprók, bundája hátán világos pontokkal tarkított sárgásszürke alapszínű, a hasoldalon rozsdasárga, míg a nyaknál fehér. Mellső végtagjai satnyábbak a hátsóknál.
+
+        Nyílt, rövidfüvű területek lakója. 
+        
+        A nappal aktív állat veszély esetén felegyenesedve jellegzetes füttyöt hallat, mely felhívja fajtársai figyelmét a közelgő ellenségre.
+        
+        Más emlőssel nehezen összetéveszthető, könnyen felismerhető faj. Jelenlétét a 4-5 cm átmérőjű ürgelyukak felfedezésével is valószínűsíthetjük.
+        
+        Az ürge élettevékenységében szigorú menetrendet követ az év során. Kora tavasszal a nagyobb termetű hímek jelennek meg először a felszínen. Miután megvívták párviadalaikat a legjobb területekért, végre a nőstények is előkerülnek. A párzási időszakot követően a nőstények fészket építenek a járatrendszer egy védett kamrájában. A vemhességi időszak, az ellés és a szoptatás június végén zárul le, a fiatalok ekkor kezdenek önállósulni. Ilyenkor kisebb csoportokat is láthatunk a felszínen együtt mozogni.</p>
+      <img src="ürge2.jpg"; width="300px"; height="170px">
+      <p>A hímek a párzást követően már nem foglalkoznak fajtársaikkal és területet sem védenek, ilyenkor már a táplálkozás köti le idejük nagy részét. A nőstények és a fiatalok csak nyár közepén kezdhetik meg a téli álomhoz szükséges zsírkészletek felhalmozását. Ebből adódik a téli álomra vonulás ütemezése is: a nagy, kifejlett hímek már augusztus közepén elvonulhatnak lezárt üregeik mélyére, a felnőtt nőstények szeptemberben jutnak olyan állapotba, hogy ezt megtehessék, míg fiatal állatokat akár még október vége felé is megfigyelhetünk a felszínen.
+
+        A téli álom során az ürge életműködései egészen lelassulnak, testhőmérséklete a környezet hőmérsékletére esik vissza, mely abban a mélységben a föld alatt sosem éri el a fagypontot. Szélsőséges esetben azonban már mértek kevéssel fagypont alatti testhőmérsékletet is, mely nem okozott az állatnak maradandó károsodást!</p>
+    </div>
+  </div>
+<!--15vége-->
+<!--14-->
+  <div class="offcanvas offcanvas-end" id="emlose2014">
+    <div class="offcanvas-header">
+      <h5>2014. év emlőse</h5>
+      <button class="btn btn-danger" data-bs-dismiss="offcanvas">Vissza</button>
+    </div>
+    <div class="offcanvas-body">
+      <h3>Sün</h3>
+      <img src="sün.jpg"; width="300px"; height="170px">
+      <p>A keleti sün (Erinaceus roumanicus) a sünalakúak (Erinaceomorpha) rendjébe tartozó 30-35 cm hosszú, zömök testű, rövid, vaskos végtagokkal rendelkező, 4-5 cm farokhosszúságú állat. Feje előrefelé keskenyedik, és a hegyes alsó ajkat messze meghaladó, cipőgombszerű orrban végződik. Fülei oldalt kikandikálnak a tüskék alól, de nem emelkednek ki a szőrzetből. Apró, élénk fekete csillogó szemei oldalra néznek. Hátát fedő tüskéi megvastagodott szőrképződmények, melyek mindegyikén - sötétbarna tövüktől fehér hegyükig - barna és fehér csíkok váltogatják egymást. A homlok, fej, nyak és végtagszőrök barnák. Hasa barnásszürke, néha szinte fehér.
+        
+        Magyarországon elterjedt, a legtöbb fákat, vagy cserjéket legalább elszórtan tartalmazó vidéken megfigyelhető. A településeken kifejezetten gyakorinak mondható jelenléte.</p>
+      <img src="sün1.jpg"; width="300px"; height="170px">
+      <p>Napnyugta után jár táplálék után, veszély esetén összegömbölyödve szúrós tűpárnává változik, és útját csak akkor folytatja, ha újra biztonságban érzi magát. Mivel hazánkban ez az egyetlen sünfaj él, más emlőssel nagyon nehezen összetéveszthető, könnyen felismerhető faj.
+
+        Az év legnagyobb részében kimondottan magányos állatnak nevezhető, a két nem képviselői csak párzáskor keresik egymás társaságát. A fiatal sünfiak anyjuk után döcögve derítik fel a környéket, azonban amint felcseperednek, önálló életet kezdenek.</p>
+      <img src="sün2.jpg"; width="300px"; height="170px">
+      <p>A sünök látása viszonylag gyenge, de az éjszakai viszonyok között remek szaglására és kifinomult hallására támaszkodva kiválóan tájékozódik. Kedveli a védettebb, kevésbé nyílt helyeket, gyakran kőfalak, kerítések mentén közlekedik. A hideg téli hónapokat farakások, rőzsekupacok alatt téli álomban vészeli át. A kedves állatok téli túlélési esélyeit segíthetjük azzal, hogy az évközben levágott gallyakat és a leveleket a bokrok alól nem gyűjtjük össze, hanem kupacokban hagyva menedéket nyújtunk a sünöknek.
+
+        A sajátos védekezési viselkedésük miatt különösen ki vannak téve a közúti gázolásoknak, mivel a gyorsan érkező járművektől megijedve összegömbölyödnek, ahelyett, hogy futni próbálnának. Az óvatos szürkületi vezetés sok sün életét mentheti meg.</p>
+
+    </div>
+  </div>
+<!--14vége-->
+</body>
+</html>
